@@ -57,7 +57,7 @@ class _CalculatorWidgetState extends State<CalculatorWidget> {
       'tan': () {
         _apply(tan);
       },
-      'tan': () {
+      'atan': () {
         _apply(atan);
       },
     };
