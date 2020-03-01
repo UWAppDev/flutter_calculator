@@ -19,7 +19,8 @@ class _CalculatorWidgetState extends State<CalculatorWidget> {
   final List<String>    buttons = 
   [
     '+', '-', '*', '/',
-    '.', 'C', '=', 'e', 'sin',
+    '.', 'C', '=', '^',
+    'e', 'sin',
     'cos', 'tan', 'atan'
   ];
 
@@ -180,6 +181,9 @@ class _CalculatorWidgetState extends State<CalculatorWidget> {
           break;
         case '/':
           newValue /= currentValue;
+          break;
+        case '^':
+          newValue = pow(newValue, currentValue);
           break;
         default:
           newValue = currentValue;
